@@ -39,7 +39,7 @@ function getNames(local) {
 // findBy :: String, String -> Language
 function findBy(crit, val) {
     for (var i = 0; i < data.length; i++) {
-        if (val === data[i][crit]) {
+        if (val.toLowerCase() === data[i][crit].toLowerCase()) {
             return data[i];
         }
     }
